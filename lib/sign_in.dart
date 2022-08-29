@@ -1,4 +1,7 @@
+import 'package:buildapp/home.dart';
+import 'package:buildapp/sign_up.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SignIn extends StatefulWidget {
   @override
@@ -111,7 +114,7 @@ class _SignInState extends State<SignIn> {
                           borderRadius: BorderRadius.circular(15),
                         ),
                         onPressed: () {
-                          Navigator.pushNamed(context, 'Home');
+                          Get.to(HomeScreen());
                         },
                       ),
                     ),
@@ -120,7 +123,7 @@ class _SignInState extends State<SignIn> {
                     padding: const EdgeInsets.all(25.0),
                     child: FlatButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, 'SignUp');
+                        Get.to(SignUp());
                       },
                       textColor: Colors.black,
                       child: Text(
