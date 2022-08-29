@@ -20,6 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
   animated_splash_screen:
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:
